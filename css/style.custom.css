@@ -28,6 +28,10 @@ html, body {
 .bottom-menu{
     margin-top: 25px;
 }
+
+.btn-avanti{
+    min-width: 110px;
+}
 /*bottoni menu*/
 .bottom-menu .btn-primary{
     min-width: 110px;
