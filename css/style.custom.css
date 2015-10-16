@@ -11,7 +11,9 @@ html, body {
    /* margin: 0 auto -50px;*/
 }
 
-
+.centro-riga{
+    text-align: center;
+}
 .logopanel{
     margin-left: 15px;
     margin-top: 10px;
