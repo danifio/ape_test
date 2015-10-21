@@ -44,22 +44,22 @@
                 <div class="row" style="margin-top: 20px">Seleziona il tuo radiatore e la sua potenza
                     <div class="checkbox">
                         <label for="radiatore1">
-                        <input type="checkbox" id="radiatore1">Radiatore 1</label>
-                        <label>Potenza<input type="text" id="potenza1"></label>
+                        <input type="checkbox" id="radiatore1" name="radiatore1">Radiatore 1</label>
+                        <label>Potenza<input type="text" id="potenza1" name="potenza1"></label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="checkbox">
                     <label for="radiatore2">
-                        <input type="checkbox" id="radiatore2">Radiatore 2</label>
-                    <label>Potenza<input type="text" id="potenza2"></label>
+                        <input type="checkbox" id="radiatore2" name="radiatore2">Radiatore 2</label>
+                    <label>Potenza<input type="text" id="potenza2" name="potenza2"></label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="checkbox">
                     <label for="radiatore3">
-                        <input type="checkbox" id="radiatore3">Radiatore 2</label>
-                    <label>Potenza<input type="text" id="potenza3"></label>
+                        <input type="checkbox" id="radiatore3" name="radiatore3">Radiatore 3</label>
+                    <label>Potenza<input type="text" id="potenza3" name="potenza3"></label>
                     </div>
                 </div>
             </div>
@@ -68,25 +68,25 @@
     <div class="row">
         <div class="checkbox">
             <label for="controllo">
-                <input type="checkbox" id="controllo" data-toggle="collapse" data-target="#demo2"> Sottosistema di controllo e regolazione</label>
+                <input type="checkbox" id="controllo" data-toggle="collapse" data-target="#demo2" name="controllo"> Sottosistema di controllo e regolazione</label>
             <div id="demo2" class="collapse">
                 <div class="row" style="margin-top: 20px">Seleziona il tuo termostato
                     <div class="checkbox">
                         <label for="termostato1">
-                            <input type="checkbox" id="termostato1">Termostato di zona 1</label>
+                            <input type="checkbox" id="termostato1" name="termostato1">Termostato di zona 1</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="checkbox">
                         <label for="termostato2">
-                            <input type="checkbox" id="termostato2">Termostato di zona 2</label>
+                            <input type="checkbox" id="termostato2" name="termostato2">Termostato di zona 2</label>
 
                     </div>
                 </div>
                 <div class="row">
                     <div class="checkbox">
                         <label for="termostato3">
-                            <input type="checkbox" id="termostato3">Termostato di zona 3</label>
+                            <input type="checkbox" id="termostato3" name="termostato3">Termostato di zona 3</label>
                     </div>
                 </div>
             </div>
@@ -95,25 +95,25 @@
     <div class="row">
         <div class="checkbox">
             <label for="distribuzione">
-                <input type="checkbox" id="distribuzione" data-toggle="collapse" data-target="#demo3"> Sottosistema di distribuzione</label>
+                <input type="checkbox" id="distribuzione" data-toggle="collapse" data-target="#demo3" name="distribuzione"> Sottosistema di distribuzione</label>
             <div id="demo3" class="collapse">
                 <div class="row" style="margin-top: 20px">Seleziona il tuo impianto di distribuzione
                     <div class="checkbox">
                         <label for="distribuzione1">
-                            <input type="checkbox" id="distribuzione1">Impianto centralizzato</label>
+                            <input type="checkbox" id="distribuzione1" name="distribuzione1">Impianto centralizzato</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="checkbox">
                         <label for="distribuzione2">
-                            <input type="checkbox" id="distribuzione2">Distribuzione verticale</label>
+                            <input type="checkbox" id="distribuzione2" name="distribuzione2">Distribuzione verticale</label>
 
                     </div>
                 </div>
                 <div class="row">
                     <div class="checkbox">
                         <label for="distribuzione3">
-                            <input type="checkbox" id="distribuzione3">Distribuzione orizzontale</label>
+                            <input type="checkbox" id="distribuzione3" name="distribuzione3">Distribuzione orizzontale</label>
                     </div>
                 </div>
 
@@ -123,31 +123,31 @@
     <div class="row">
         <div class="checkbox">
             <label for="accumulo">
-                <input type="checkbox" id="accumulo"> Sottosistema di accumulo</label>
+                <input type="checkbox" id="accumulo" name="accumulo"> Sottosistema di accumulo</label>
         </div>
     </div>
     <div class="row">
         <div class="checkbox">
             <label for="generazione">
-                <input type="checkbox" id="generazione" data-toggle="collapse" data-target="#demo4"> Sottosistema di generazione</label>
+                <input type="checkbox" id="generazione" data-toggle="collapse" data-target="#demo4" name="generazione"> Sottosistema di generazione</label>
             <div id="demo4" class="collapse">
                 <div class="row" style="margin-top: 20px">Seleziona il tuo generatore
                     <div class="checkbox">
                         <label for="generatore1">
-                            <input type="checkbox" id="generatore1">Generatori monostadio</label>
+                            <input type="checkbox" id="generatore1" name="generatore1">Generatori monostadio</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="checkbox">
                         <label for="generatore2">
-                            <input type="checkbox" id="generatore2">Generatori modulati</label>
+                            <input type="checkbox" id="generatore2" name="generatore2">Generatori modulati</label>
 
                     </div>
                 </div>
                 <div class="row">
                     <div class="checkbox">
                         <label for="generatore3">
-                            <input type="checkbox" id="generatore3">Generatori a condensazione</label>
+                            <input type="checkbox" id="generatore3" name="generatore3">Generatori a condensazione</label>
                     </div>
                 </div>
             </div>
@@ -156,13 +156,13 @@
     <div class="row" style="margin-top: 20px">
         <div class="col-sm-6">
         <label for="termica" >Seleziona la centrale termica presente nel tuo ambiente</label>
-            <select class="form-control" id="termica">
+            <select class="form-control" id="termica" name="termica">
                 <option selected>Seleziona</option>
-                <option>opzione 1</option>
-                <option>opzione 2</option>
-                <option>opzione 3</option>
-                <option>opzione 4</option>
-                <option>opzione 5</option>
+                <option value="termica1">opzione 1</option>
+                <option value="termica2">opzione 2</option>
+                <option value="termica3">opzione 3</option>
+                <option value="termica4">opzione 4</option>
+                <option value="termica5">opzione 5</option>
             </select>
         </div>
         <div class="col-sm-6"></div>
