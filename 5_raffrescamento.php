@@ -11,7 +11,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/style.default.css" rel="stylesheet">
     <link href="css/style.custom.css" rel="stylesheet">
-
+    <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
@@ -40,7 +40,7 @@
     <div class="row">
         <div class="checkbox">
             <label for="terminale-raff">
-                <input type="checkbox" id="terminale-raff" data-toggle="collapse" data-target="#prova1">
+                <input type="checkbox" id="terminale-raff" name="terminale-raff" value="1" data-toggle="collapse" data-target="#prova1">
                 Terminale di erogazione
             </label>
             <div id="prova1" class="collapse">
@@ -67,7 +67,7 @@
     <div class="row">
         <div class="checkbox">
             <label for="controllo-raff">
-                <input type="checkbox" id="controllo-raff" data-toggle="collapse" data-target="#prova2">
+                <input type="checkbox" id="controllo-raff" name="controllo-raff" value="1" data-toggle="collapse" data-target="#prova2">
                 Sottosistema di controllo
             </label>
             <div id="prova2" class="collapse">
@@ -94,7 +94,7 @@
         <div class="row">
             <div class="checkbox">
                 <label for="distribuzione-raff">
-                    <input type="checkbox" id="distribuzione-raff" data-toggle="collapse" data-target="#prova3">
+                    <input type="checkbox" id="distribuzione-raff" name="distribuzione-raff" value="1" data-toggle="collapse" data-target="#prova3">
                     Perdite di distribuzione
                 </label>
                 <div id="prova3" class="collapse">
@@ -122,7 +122,7 @@
         <div class="row">
             <div class="checkbox">
                 <label for="perdite-raff">
-                    <input type="checkbox" id="perdite-raff" data-toggle="collapse" data-target="#prova4">
+                    <input type="checkbox" id="perdite-raff" name="perdite-raff" value="1" data-toggle="collapse" data-target="#prova4">
                     Perdite di accumulo
                 </label>
                 <div id="prova4" class="collapse">

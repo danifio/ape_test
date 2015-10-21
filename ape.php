@@ -2,12 +2,13 @@
 
     ape_connect();
 
-    global $step;
+    //global $step;
 
     $step=$_POST['step'];
+    echo 1 . $step;
 
     if(is_numeric($step)){
-        echo $step;
+
         switch($step){
             case 0:
                 step0();
@@ -26,7 +27,6 @@
                 break;
             case 4 :
                 step4();
-
                 break;
             case 5 :
                 step5();
@@ -112,28 +112,58 @@
     }
 
     function step4(){
-        echo "prova4";
-        global $mysqli;
 
- var_dump($_POST);
-        //require('4_riscaldamento.php');
+        //global $mysqli;
+
+        //var_dump($_POST);
+        echo "prova riscaldamento";
+
+        require('4_riscaldamento.php');
 
 
-        $query_warmup = "INSERT INTO warm_up (emission, control, distribution, backlog, generation, thermal_power_plant)
+        /*$query_warmup = "INSERT INTO warm_up (emission, control, distribution, backlog, generation, thermal_power_plant)
                           VALUES ('{$_POST['emissione']}','{$_POST['controllo']}',
                           '{$_POST['distribuzione']}','{$_POST['accumulo']}', '{$_POST['generazione']}',
-                          '{$_POST['termica']}')";
+                          '{$_POST['termica']}')";*/
 
-        if(mysqli_query($mysqli, $query_warmup)){
-            die("ok");
+
+
+        /*if(($_POST['emissione'])==1){
+
+            $query_warmup = "INSERT INTO warm_up (radiator1, radiator2, radiator3)
+                              VALUES ('{$_POST['radiatore1']}', '{$_POST['radiatore2']}','{$_POST['radiatore3']}' )";
         }
-        else{
-            die(mysqli_error($mysqli));
-        }
+
+        if(($_POST['control'])==1){
+
+            $query_warmup = "INSERT INTO warm_up (thermostat1, thermostat2, thermostat3)
+                              VALUES ('{$_POST['termostato1']}', '{$_POST['termostato2']}', '{$_POST['termostato3']}')";
+        }*/
+
 
     }
 
-    function step5(){}
+    function step5(){
+
+        global $mysqli;
+
+        echo "prova raffrescamento";
+
+        require('5_raffrescamento.php');
+
+        $query_coling = "INSERT INTO coling (supply, control, distribution, backlog)
+                          VALUES ('{$_POST['terminale-raff']}','{$_POST['controllo-raff']}','{$_POST['distribuzione-raff']}','{$_POST['perdite-raff']}')";
+
+        mysqli_query($mysqli, $query_coling) or die(mysqli_error($mysqli));
+
+        if(($_POST['terminale-raff'])==1){
+            $query_coling2 = "INSERT INTO coling (supply1, supply2, supply3, supply4)
+                              VALUES ('{$_POST['raffrescamento1']}','{$_POST['raffrescamento2']}','{$_POST['raffrescamento3']}', '{$_POST['raffrescamento4']}')";
+
+            mysqli_query($mysqli, $query_coling2) or die(mysqli_error($mysqli));
+        }
+
+    }
 
     function step6(){}
 
@@ -155,5 +185,9 @@
 
     }
 
-    $mysqli-> close();
-?>
+    function ape_disconnect()
+    {
+        global $mysqli;
+        mysqli_close($mysqli);
+
+    }
