@@ -5,7 +5,7 @@
     //global $step;
 
     $step=$_POST['step'];
-    echo 1 . $step;
+    echo $step;
 
     if(is_numeric($step)){
 
@@ -147,21 +147,15 @@
 
         global $mysqli;
 
-        echo "prova raffrescamento";
-
         require('5_raffrescamento.php');
-
-        $query_coling = "INSERT INTO coling (supply, control, distribution, backlog)
-                          VALUES ('{$_POST['terminale-raff']}','{$_POST['controllo-raff']}','{$_POST['distribuzione-raff']}','{$_POST['perdite-raff']}')";
-
+        var_dump(isset($_POST['raffrescamento3']));
+        var_dump(isset($_POST['raffrescamento2']));
+        $query_coling = "INSERT INTO coling (supply, control, distribution, backlog, supply1, supply2, supply3)
+                          VALUES ('{$_POST['terminale-raff']}','{$_POST['controllo-raff']}','{$_POST['distribuzione-raff']}','{$_POST['perdite-raff']}',
+                           '{$_POST['raffrescamento1']}','{$_POST['raffrescamento2']}','{$_POST['raffrescamento3']}')";
+        echo $query_coling;
         mysqli_query($mysqli, $query_coling) or die(mysqli_error($mysqli));
 
-        if(($_POST['terminale-raff'])==1){
-            $query_coling2 = "INSERT INTO coling (supply1, supply2, supply3, supply4)
-                              VALUES ('{$_POST['raffrescamento1']}','{$_POST['raffrescamento2']}','{$_POST['raffrescamento3']}', '{$_POST['raffrescamento4']}')";
-
-            mysqli_query($mysqli, $query_coling2) or die(mysqli_error($mysqli));
-        }
 
     }
 

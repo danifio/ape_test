@@ -11,8 +11,9 @@
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/style.default.css" rel="stylesheet">
     <link href="css/style.custom.css" rel="stylesheet">
-
+    <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/respond.min.js"></script>
+
 </head>
 <body>
 <div class="page-header">
