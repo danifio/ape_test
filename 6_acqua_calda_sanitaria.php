@@ -71,10 +71,10 @@
                 <select class="form-control" id="attivita" name="attività">
                     <option selected>Seleziona attività</option>
                     <option value="opzione1">opzione 1</option>
-                    <option value>opzione 2</option>
-                    <option>opzione 3</option>
-                    <option>opzione 4</option>
-                    <option>opzione 5</option>
+                    <option value="opzione2">opzione 2</option>
+                    <option value="opzione2">opzione 3</option>
+                    <option value="opzione3">opzione 4</option>
+                    <option value="opzione4">opzione 5</option>
                 </select>
 
             </div>
@@ -84,7 +84,7 @@
 
     <div class="panel-footer">
         <a href="5_raffrescamento.html"> <button class="btn btn-default">Torna indietro</button></a>
-        <a href="7_fonti_rinnovabili.html"> <button class="btn btn-primary pull-right btn-avanti">Avanti</button></a>
+        <a href="7_fonti_rinnovabili.html"> <button type="submit" class="btn btn-primary pull-right btn-avanti">Avanti</button></a>
     </div>
 
 </div>
