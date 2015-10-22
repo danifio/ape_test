@@ -41,7 +41,7 @@
     <div class="row">
         <div class="checkbox">
             <label for="generatore1acs">
-                <input type="checkbox" id="generatore1acs">Generatore a gas di tipo istantaneo per la sola produzione di ACS
+                <input type="checkbox" id="generatore1acs" name="generatore1acs">Generatore a gas di tipo istantaneo per la sola produzione di ACS
             </label>
 
         </div>
@@ -49,7 +49,7 @@
     <div class="row">
         <div class="checkbox">
             <label for="generatore2acs">
-                <input type="checkbox" id="generatore2acs">
+                <input type="checkbox" id="generatore2acs" name="generatore2acs">
                 Generatore a gas ad accumulo
             </label>
 
@@ -58,7 +58,7 @@
     <div class="row">
         <div class="checkbox">
             <label for="generatore3acs">
-                <input type="checkbox" id="generatore3acs">
+                <input type="checkbox" id="generatore3acs" name="generatore3acs">
                 Bollitore elettrico ad accumulo e a fuoco diretto
             </label>
 
@@ -68,10 +68,10 @@
         <div class="col-sm-4">
             <div class="form-group">
                 <label for="attivita">Seleziona il tipo di attività a cui è destinato l'immobile</label>
-                <select class="form-control" id="attivita">
-                    <option selected>Seleziona l'attività</option>
-                    <option>opzione 1</option>
-                    <option>opzione 2</option>
+                <select class="form-control" id="attivita" name="attività">
+                    <option selected>Seleziona attività</option>
+                    <option value="opzione1">opzione 1</option>
+                    <option value>opzione 2</option>
                     <option>opzione 3</option>
                     <option>opzione 4</option>
                     <option>opzione 5</option>
