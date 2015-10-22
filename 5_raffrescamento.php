@@ -103,7 +103,7 @@
                             <div class="form-group">
                                 <label for="raffrescamento3">Seleziona</label>
                                 <select class="form-control" id="raffrescamento3" name="raffrescamento3">
-                                    <option selected>Seleziona l'attività</option>
+                                    <option selected>Seleziona</option>
                                     <option value="fluido termovettore ad aria">Fluido termovettore ad aria</option>
                                     <option value="fluido termovettore ad aria e acqua">Fluido termovettore ad aria e acqua</option>
                                     <option value="opzione2">opzione 2</option>
@@ -131,7 +131,8 @@
                             <div class="form-group">
                                 <label for="raffrescamento4">Seleziona</label>
                                 <select class="form-control" id="raffrescamento4" name="raffrescamento4">
-                                    <option selected></option>
+                                    <option selected>Seleziona</option>
+                                    <option value="opzione1">opzione 1</option>
                                     <option value="opzione2">opzione 2</option>
                                     <option value="opzione3">opzione 3</option>
                                     <option value="opzione4">opzione 4</option>
