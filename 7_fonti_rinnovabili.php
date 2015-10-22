@@ -50,11 +50,11 @@
                             <label for="sel-solare">Seleziona il tipo di pannello</label>
                             <select class="form-control" id="sel-solare" name="sel-solare">
                                 <option selected>Seleziona</option>
-                                <option>opzione 1</option>
-                                <option>opzione 2</option>
-                                <option>opzione 3</option>
-                                <option>opzione 4</option>
-                                <option>opzione 5</option>
+                                <option value="opzione1">opzione 1</option>
+                                <option value="opzione2">opzione 2</option>
+                                <option value="opzione2">opzione 3</option>
+                                <option value="opzione3">opzione 4</option>
+                                <option value="opzione4">opzione 5</option>
                             </select>
 
                         </div>
@@ -78,10 +78,11 @@
                             <select class="form-control" id="sel-fotovoltaico" name="sel-fotovoltaico">
                                 <option selected>Seleziona</option>
                                 <option>Regolazione centralizzata</option>
-                                <option>opzione 2</option>
-                                <option>opzione 3</option>
-                                <option>opzione 4</option>
-                                <option>opzione 5</option>
+                                <option value="opzione1">opzione 1</option>
+                                <option value="opzione2">opzione 2</option>
+                                <option value="opzione2">opzione 3</option>
+                                <option value="opzione3">opzione 4</option>
+                                <option value="opzione4">opzione 5</option>
                             </select>
 
                         </div>
@@ -104,11 +105,11 @@
                             <label for="sel-biomasse">Tipo di biomasse</label>
                             <select class="form-control" id="sel-biomasse" name="sel-biomasse">
                                 <option selected>Seleziona</option>
-                                <option>...</option>
-                                <option>...</option>
-                                <option>opzione 3</option>
-                                <option>opzione 4</option>
-                                <option>opzione 5</option>
+                                <option value="opzione1">opzione 1</option>
+                                <option value="opzione2">opzione 2</option>
+                                <option value="opzione2">opzione 3</option>
+                                <option value="opzione3">opzione 4</option>
+                                <option value="opzione4">opzione 5</option>
                             </select>
 
                         </div>
@@ -131,11 +132,11 @@
                             <label for="sel-geotermico">Sistema di captazione del calore</label>
                             <select class="form-control" id="sel-geotermico" name="sel-geotermico">
                                 <option selected></option>
-                                <option>opzione 1</option>
-                                <option>opzione 2</option>
-                                <option>opzione 3</option>
-                                <option>opzione 4</option>
-                                <option>opzione 5</option>
+                                <option value="opzione1">opzione 1</option>
+                                <option value="opzione2">opzione 2</option>
+                                <option value="opzione2">opzione 3</option>
+                                <option value="opzione3">opzione 4</option>
+                                <option value="opzione4">opzione 5</option>
                             </select>
 
                         </div>
@@ -158,11 +159,11 @@
                             <label for="sel-eolico">Seleziona il tipo di impianto</label>
                             <select class="form-control" id="sel-eolico" name="sel-eolico">
                                 <option selected></option>
-                                <option>opzione 1</option>
-                                <option>opzione 2</option>
-                                <option>opzione 3</option>
-                                <option>opzione 4</option>
-                                <option>opzione 5</option>
+                                <option value="opzione1">opzione 1</option>
+                                <option value="opzione2">opzione 2</option>
+                                <option value="opzione2">opzione 3</option>
+                                <option value="opzione3">opzione 4</option>
+                                <option value="opzione4">opzione 5</option>
                             </select>
                         </div>
                     </div>
