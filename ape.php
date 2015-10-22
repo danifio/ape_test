@@ -161,7 +161,18 @@
         mysqli_query($mysqli, $query_hot_water) or die(mysqli_error($mysqli));
     }
 
-    function step7(){}
+    function step7(){
+        echo "prova fonti rinnovabili";
+
+        global $mysqli;
+
+        require('7_fonti_rinnovabili.php');
+
+        $query_renewables = "INSERT INTO renewables (solar_thermal, solar, biomass, geothermal, wind)
+                              VALUES ('{$_POST['solare-termico']}', '{$_POST['fotovoltaico']}', '{$_POST['biomasse']}', '{$_POST['geotermico']}', '{$_POST['eolico']}')";
+
+        mysqli_query($mysqli, $query_renewables) or die(mysqli_error($mysqli));
+    }
 
     function ape_connect(){
         global $mysqli;

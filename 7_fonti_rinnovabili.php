@@ -40,15 +40,15 @@
     <div class="row">
         <div class="checkbox">
             <label for="solare-termico">
-                <input type="checkbox" id="solare-termico" data-toggle="collapse" data-target="#prova1">
+                <input type="checkbox" id="solare-termico" name="solare-termico" data-toggle="collapse" data-target="#prova1">
                 Solare termico
             </label>
             <div id="prova1" class="collapse">
                 <div class="row" style="margin-top: 20px">
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label for="solare">Seleziona il tipo di pannello</label>
-                            <select class="form-control" id="solare">
+                            <label for="sel-solare">Seleziona il tipo di pannello</label>
+                            <select class="form-control" id="sel-solare" name="sel-solare">
                                 <option selected>Seleziona</option>
                                 <option>opzione 1</option>
                                 <option>opzione 2</option>
@@ -67,7 +67,7 @@
     <div class="row">
         <div class="checkbox">
             <label for="fotovoltaico">
-                <input type="checkbox" id="fotovoltaico" data-toggle="collapse" data-target="#prova2">
+                <input type="checkbox" id="fotovoltaico" name="fotovoltaico" data-toggle="collapse" data-target="#prova2">
                 Fotovoltaico
             </label>
             <div id="prova2" class="collapse">
@@ -75,7 +75,7 @@
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label for="sel-fotovoltaico">Seleziona</label>
-                            <select class="form-control" id="sel-fotovoltaico">
+                            <select class="form-control" id="sel-fotovoltaico" name="sel-fotovoltaico">
                                 <option selected>Seleziona</option>
                                 <option>Regolazione centralizzata</option>
                                 <option>opzione 2</option>
@@ -94,7 +94,7 @@
     <div class="row">
         <div class="checkbox">
             <label for="biomasse">
-                <input type="checkbox" id="biomasse" data-toggle="collapse" data-target="#prova3">
+                <input type="checkbox" id="biomasse" name="biomasse" data-toggle="collapse" data-target="#prova3">
                 Biomasse
             </label>
             <div id="prova3" class="collapse">
@@ -102,7 +102,7 @@
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label for="sel-biomasse">Tipo di biomasse</label>
-                            <select class="form-control" id="sel-biomasse">
+                            <select class="form-control" id="sel-biomasse" name="sel-biomasse">
                                 <option selected>Seleziona</option>
                                 <option>...</option>
                                 <option>...</option>
@@ -121,7 +121,7 @@
     <div class="row">
         <div class="checkbox">
             <label for="geotermico">
-                <input type="checkbox" id="geotermico" data-toggle="collapse" data-target="#prova4">
+                <input type="checkbox" id="geotermico" name="geotermico" data-toggle="collapse" data-target="#prova4">
                 Geotermico
             </label>
             <div id="prova4" class="collapse">
@@ -129,7 +129,7 @@
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label for="sel-geotermico">Sistema di captazione del calore</label>
-                            <select class="form-control" id="sel-geotermico">
+                            <select class="form-control" id="sel-geotermico" name="sel-geotermico">
                                 <option selected></option>
                                 <option>opzione 1</option>
                                 <option>opzione 2</option>
@@ -148,7 +148,7 @@
     <div class="row">
         <div class="checkbox">
             <label for="eolico">
-                <input type="checkbox" id="eolico" data-toggle="collapse" data-target="#prova5">
+                <input type="checkbox" id="eolico" name="eolico" data-toggle="collapse" data-target="#prova5">
                 Eolico
             </label>
             <div id="prova5" class="collapse">
@@ -156,7 +156,7 @@
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label for="sel-eolico">Seleziona il tipo di impianto</label>
-                            <select class="form-control" id="sel-eolico">
+                            <select class="form-control" id="sel-eolico" name="sel-eolico">
                                 <option selected></option>
                                 <option>opzione 1</option>
                                 <option>opzione 2</option>
@@ -173,6 +173,7 @@
     <div class="panel-footer">
         <a href="6_acqua_calda_sanitaria.html"> <button class="btn btn-default">Torna indietro</button></a>
         <a href="compra.html"> <button class="btn btn-primary pull-right btn-avanti">Avanti</button></a>
+    </form>
     </div>
 
 </div>
