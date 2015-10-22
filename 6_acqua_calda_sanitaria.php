@@ -86,7 +86,7 @@
         <a href="5_raffrescamento.html"> <button class="btn btn-default">Torna indietro</button></a>
         <a href="7_fonti_rinnovabili.html"> <button type="submit" class="btn btn-primary pull-right btn-avanti">Avanti</button></a>
     </div>
-
+    </form>
 </div>
 <div class="footer">
 <div class="row">

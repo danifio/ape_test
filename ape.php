@@ -34,11 +34,11 @@
                 break;
             case 5 :
                 step5();
-                require('5_raffrescamento.php');
+                //require('5_raffrescamento.php');
                 break;
             case 6 :
                 step6();
-                require('6_acqua_calda_sanitaria.php');
+                //require('6_acqua_calda_sanitaria.php');
                 break;
             case 7 :
                 step7();
@@ -125,24 +125,12 @@
         require('4_riscaldamento.php');
 
 
-        /*$query_warmup = "INSERT INTO warm_up (emission, control, distribution, backlog, generation, thermal_power_plant)
+        /*$query_warmup = "INSERT INTO warm_up (emission, control, distribution, backlog, generation, thermal_power_plant, radiator1, radiator2, radiator3,
+                            thermostat1, thermostat2, thermostat3)
                           VALUES ('{$_POST['emissione']}','{$_POST['controllo']}',
                           '{$_POST['distribuzione']}','{$_POST['accumulo']}', '{$_POST['generazione']}',
-                          '{$_POST['termica']}')";*/
-
-
-
-        /*if(($_POST['emissione'])==1){
-
-            $query_warmup = "INSERT INTO warm_up (radiator1, radiator2, radiator3)
-                              VALUES ('{$_POST['radiatore1']}', '{$_POST['radiatore2']}','{$_POST['radiatore3']}' )";
-        }
-
-        if(($_POST['control'])==1){
-
-            $query_warmup = "INSERT INTO warm_up (thermostat1, thermostat2, thermostat3)
-                              VALUES ('{$_POST['termostato1']}', '{$_POST['termostato2']}', '{$_POST['termostato3']}')";
-        }*/
+                          '{$_POST['termica']}', '{$_POST['radiatore1']}', '{$_POST['radiatore2']}','{$_POST['radiatore3']}',
+                           '{$_POST['termostato1']}', '{$_POST['termostato2']}', '{$_POST['termostato3']}')";*/
 
 
     }
@@ -152,18 +140,26 @@
         global $mysqli;
 
         require('5_raffrescamento.php');
-        var_dump(isset($_POST['raffrescamento3']));
-        var_dump(isset($_POST['raffrescamento2']));
+
         $query_coling = "INSERT INTO coling (supply, control, distribution, backlog, supply1, supply2, supply3)
                           VALUES ('{$_POST['terminale-raff']}','{$_POST['controllo-raff']}','{$_POST['distribuzione-raff']}','{$_POST['perdite-raff']}',
                            '{$_POST['raffrescamento1']}','{$_POST['raffrescamento2']}','{$_POST['raffrescamento3']}')";
-        echo $query_coling;
-        mysqli_query($mysqli, $query_coling) or die(mysqli_error($mysqli));
 
+        mysqli_query($mysqli, $query_coling) or die(mysqli_error($mysqli));
 
     }
 
-    function step6(){}
+    function step6(){
+
+        global $mysqli;
+
+        require('6_acqua_calda_sanitaria.php');
+
+        $query_hot_water = "INSERT INTO hot_water (generator_gas, generator_backlog, electric_generator, activity)
+                            VALUES ('{$_POST['generatore1acs']}', '{$_POST['generatore2acs']}', '{$_POST['generatore3acs']}', '{$_POST['attività']}')";
+
+        mysqli_query($mysqli, $query_hot_water) or die(mysqli_error($mysqli));
+    }
 
     function step7(){}
 
