@@ -4,10 +4,14 @@
 
     //global $step;
 
-    $step=$_POST['step'];
+	if (isset($_POST['step'])) {
+		$step = $_POST['step'];
+	} else {
+		$step = 0;
+	}
     echo $step;
 
-    if(is_numeric($step)){
+    if($step > 0){
 
         switch($step){
             case 0:
