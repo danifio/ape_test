@@ -250,11 +250,9 @@
             </div>
         </div>
     </div>
-
-
     <div class="panel-footer">
         <a href="primoaccesso.html"><button class="btn btn-default">Torna indietro</button></a>
-        <a href="2_dettagli_generali_immobile.html"> <button class="btn btn-primary pull-right btn-avanti">Avanti</button></a>
+        <a href="2_dettagli_generali_immobile.html"> <button type="submit" class="btn btn-primary pull-right btn-avanti">Avanti</button></a>
     </div>
     </form>
 </div>

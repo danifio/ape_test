@@ -43,6 +43,7 @@
                         <tr>
                             <th class="centro-riga">#</th>
                             <th class="centro-riga">ID</th>
+                            <th class="centro-riga">Tipo certificazione</th>
                             <th class="centro-riga">Indirizzo immobile</th>
                             <th class="centro-riga">Operazioni</th>
                         </tr>
@@ -50,6 +51,7 @@
                     <tbody>
                         <td>1</td>
                         <td>001</td>
+                        <td>Riqualifica energetica</td>
                         <td>Via Trapani</td>
                         <td>
                             <a href="#" class="btn btn-xs btn-primary"><span class="fa fa-pencil"></span> Modifica</a>
@@ -60,6 +62,7 @@
                     <tbody>
                     <td>2</td>
                     <td>002</td>
+                    <td>Passaggio di proprietà</td>
                     <td>Via Sibilla</td>
                     <td>
                         <a href="#" class="btn btn-xs btn-primary"><span class="fa fa-pencil"></span> Modifica</a>
@@ -70,6 +73,7 @@
                     <tbody>
                     <td>3</td>
                     <td>003</td>
+                    <td>Affitto</td>
                     <td>Via Marsala</td>
                     <td>
                         <a href="#" class="btn btn-xs btn-primary"><span class="fa fa-pencil"></span> Modifica</a>
@@ -79,9 +83,9 @@
                     </tbody>
                 </table>
             </div>
-            <a href="primoaccesso.html" class="btn btn-primary pull-right">
-                <b>Nuova certificazione</b>
-            </a>
+            <a href="primoaccesso.html" ><button type="submit" class="btn btn-primary pull-right">
+                    <b>Nuova certificazione</b>
+            </button></a>
         </div>
     </div>
         </form>

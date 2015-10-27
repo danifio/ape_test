@@ -55,31 +55,31 @@
 
             <div class="col-sm-4">
                 <label for="comune-immobile">Comune</label>
-                <input class="form-control" type="text" id="comune-immobile" placeholder="">
+                <input class="form-control" type="text" id="comune-immobile" name="comune-immobile" placeholder="">
             </div>
             <div class="col-sm-4">
                 <label for="prov-immobile">Provincia</label>
-                <input class="form-control" type="text" id="prov-immobile" placeholder="">
+                <input class="form-control" type="text" id="prov-immobile" name="prov-immobile" placeholder="">
             </div>
             <div class="col-sm-4">
                 <label for="cap-immobile">CAP</label>
-                <input class="form-control" type="text" id="cap-immobile" placeholder="">
+                <input class="form-control" type="text" id="cap-immobile" name="cap-immobile" placeholder="">
             </div>
         </div>
         <div class="row" style="margin-top: 20px">
             <div class="col-sm-4">
                 <label for="anno-immobile">Anno costruzione</label>
-                <input id="anno-immobile" class="form-control" type="text" placeholder="gg/mm/aaaa">
+                <input id="anno-immobile" class="form-control" type="text" name="anno-immobile" placeholder="gg/mm/aaaa">
             </div>
             <div class="col-sm-4" >
                 <div class="form-group">
                     <label for="tipo-edilizia">Tipologia edilizia</label>
-                    <select class="form-control" id="tipo-edilizia">
+                    <select class="form-control" id="tipo-edilizia" name="tipo-edilizia">
                         <option selected>Seleziona il tipo di edificio</option>
-                        <option>Appartamento</option>
-                        <option>Residence</option>
-                        <option>Villa</option>
-                        <option>Casa</option>
+                        <option value="appartamento">Appartamento</option>
+                        <option value="residence">Residence</option>
+                        <option value="villa">Villa</option>
+                        <option value="casa">Casa</option>
                     </select>
                 </div>
 
@@ -87,12 +87,12 @@
             <div class="col-sm-4">
                 <div class="form-group">
                     <label for="tipo-edificio">Ed. pubblico o privato</label>
-                    <select class="form-control" id="tipo-edificio">
+                    <select class="form-control" id="tipo-edificio" name="tipo-edificio">
                         <option selected>Seleziona il tipo di edificio</option>
-                        <option>Ed. pubblico ad uso privato</option>
-                        <option>Ed. privato ad uso pubblico</option>
-                        <option>Ed. pubblico ad uso pubblico</option>
-                        <option>Ed. privato ad uso privato</option>
+                        <option value="Ed pubblico ad uso privato">Ed. pubblico ad uso privato</option>
+                        <option value="Ed privato ad uso pubblico">Ed. privato ad uso pubblico</option>
+                        <option value="Ed pubblico ad uso pubblico">Ed. pubblico ad uso pubblico</option>
+                        <option value="Ed privato ad uso privato">Ed. privato ad uso privato</option>
                     </select>
 
                 </div>
@@ -105,13 +105,13 @@
 
                 <div class="form-group">
                     <label for="tipo-costruzione">Tipologia costruttiva</label>
-                    <select class="form-control" id="tipo-costruzione">
+                    <select class="form-control" id="tipo-costruzione" name="tipo-costruzione">
                         <option selected>Seleziona il tipo di edificio</option>
-                        <option>opzione 1</option>
-                        <option>opzione 2</option>
-                        <option>opzione 3</option>
-                        <option>opzione 4</option>
-                        <option>opzione 5</option>
+                        <option value="1">opzione 1</option>
+                        <option value="2">opzione 2</option>
+                        <option value="3">opzione 3</option>
+                        <option value="4">opzione 4</option>
+                        <option value="5">opzione 5</option>
                     </select>
 
                 </div>
@@ -121,25 +121,25 @@
 
                 <div class="form-group">
                     <label for="destinazione">Destinazione d'uso</label>
-                    <select class="form-control" id="destinazione">
+                    <select class="form-control" id="destinazione" name="destinazione">
                         <option selected>Seleziona il tipo di edificio</option>
-                        <option>Abitazione</option>
-                        <option>Studio privato</option>
-                        <option>Ufficio</option>
-                        <option>Ristorazione</option>
-                        <option>Sportivo</option>
+                        <option value="Abitazione">Abitazione</option>
+                        <option value="Studio privato">Studio privato</option>
+                        <option value="Ufficio">Ufficio</option>
+                        <option value="Ristorazione">Ristorazione</option>
+                        <option value="Sportivo">Sportivo</option>
                     </select>
                 </div>
 
             </div>
 
         </div>
-    </form>
-    <div class="panel-footer">
-        <a href="1_dati_per_la_costruzione.html"> <button class="btn btn-default">Torna indietro</button></a>
-        <a href="3_caratteristiche.html"> <button class="btn btn-primary pull-right btn-avanti">Avanti</button></a>
-    </div>
 
+    <div class="panel-footer">
+        <a href="1_dati_per_la_costruzione.php"> <button class="btn btn-default">Torna indietro</button></a>
+        <a href="3_caratteristiche.html"> <button type="submit" class="btn btn-primary pull-right btn-avanti">Avanti</button></a>
+    </div>
+    </form>
 </div>
 <div class="footer">
     <div class="row">

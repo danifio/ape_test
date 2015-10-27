@@ -2,29 +2,29 @@
 
     ape_connect();
 
-    //global $step;
-
 	if (isset($_POST['step'])) {
 		$step = $_POST['step'];
 	} else {
-		$step = 0;
+		$step = -1;
 	}
     echo $step;
 
-    if($step > 0){
+    if($step > 0 || $step==0){
 
         switch($step){
             case 0:
+                //require('0_lista_certificazioni.php');
                 step0();
-                require('0_lista_certificazioni.php');
                 break;
             case 1:
+                require('1_dati_per_la_costruzione.html');
                 step1();
-                require('1_dati_per_la_costruzione.php');
+
                 break;
             case 2 :
-                step2();
                 require('2_dettagli_generali_immobile.php');
+                step2();
+
                 break;
             case 3 :
                 step3();
@@ -41,8 +41,9 @@
                 //require('6_acqua_calda_sanitaria.php');
                 break;
             case 7 :
+
                 step7();
-                require('7_fonti_rinnovabili.php');
+
                 break;
         }
     }
@@ -50,11 +51,50 @@
         echo "Error. value not present";
     }
 
-    function step0(){}
+    function step0(){
+        echo "prova";
+        //global $mysqli;;
+
+        require('0_lista_certificazioni.php');
+        echo "ciao";
+       // $query_riepilogo = "SELECT (type_certification, cap, city, province) FROM properties";
+        /*$risultati = mysqli_query($mysqli,"SELECT type_certification, cap, city, province FROM properties");
+        //$num = mysqli_num_rows($risultati);
+
+        while ($row = mysqli_num_rows($risultati)) {
+            echo 'tipo certificazion: ', $row[0] , ' Indirizzo: ', $row[1].$row[2].$row[3] , "\n";
+        }*/
+        /*$i=0;
+        while ($i < $num) {
+            //stampa cap, city, province dell immobile con la certificazione
+
+            $certificazione=$_POST['tipo-certificazione'];
+            $cap=$_POST['cap-immobile'];
+            $citta=$_POST['comune-immobile'];
+            $provincia=$_POST['prov-immobile'];
+
+            echo $certificazione . $citta . $cap . $provincia;
+
+            $i++;
+        }*/
+
+        //mysqli_query($mysqli, $risultati) or die(mysqli_error($mysqli));
+    }
 
     function step1(){}
 
-    function step2(){}
+    function step2(){
+
+        global $mysqli;
+
+        require('2_dettagli_generali_immobile.php');
+
+        $query_properties = "INSERT INTO properties (intended_use, type_of_building, type_construction, public,
+                            date_construction, cap, city, province, type_certification)
+                            VALUES ('{$_POST['destinazione']}','{$_POST['tipo-edilizia']}','{$_POST['tipo-costruzione']}','{$_POST['tipo-edificio']}','{$_POST['anno-immobile']}','{$_POST['cap-immobile']}', '{$_POST['comune-immobile']}','{$_POST['prov-immobile']}','{$_POST['tipo-certificazione']}')";
+
+        mysqli_query($mysqli, $query_properties) or die(mysqli_error($mysqli));
+    }
 
     function step3()
     {
@@ -162,16 +202,19 @@
     }
 
     function step7(){
-        echo "prova fonti rinnovabili";
 
-        global $mysqli;
+        //echo "prova fonti rinnovabili";
+
+        //global $mysqli;
 
         require('7_fonti_rinnovabili.php');
 
-        $query_renewables = "INSERT INTO renewables (solar_thermal, solar, biomass, geothermal, wind)
-                              VALUES ('{$_POST['solare-termico']}', '{$_POST['fotovoltaico']}', '{$_POST['biomasse']}', '{$_POST['geotermico']}', '{$_POST['eolico']}')";
+        /*$query_renewable = "INSERT INTO renewables (solar_thermal, solar, biomass, geothermal, wind,
+                                                      sel_solar_thermal, sel_solar, sel_biomass, sel_geothermal, sel_wind)
+                              VALUES ('{$_POST['solare-termico']}', '{$_POST['fotovoltaico']}', '{$_POST['biomasse']}', '{$_POST['geotermico']}', '{$_POST['eolico']}',
+                                      '{$_POST['sel-solare']}','{$_POST['sel-fotovoltaico']}', '{$_POST['sel-biomasse']}', '{$_POST['sel-geotermico']}', '{$_POST['sel-eolico']}')";
 
-        mysqli_query($mysqli, $query_renewables) or die(mysqli_error($mysqli));
+        mysqli_query($mysqli, $query_renewable) or die(mysqli_error($mysqli));*/
     }
 
     function ape_connect(){
